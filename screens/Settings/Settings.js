@@ -11,7 +11,7 @@ export const Settings = observer(({ }) => {
     const [confirmDelete,setConfirmDelete] = useState(false)
     const onDeleteAll = () => {
           navigation.goBack()
-        recipes.deleteAll()}
+        recipes.deleteAllRecipes()}
     return (
         <View style={[styles.container]}>
             <View style={[styles.sortContainer]}>

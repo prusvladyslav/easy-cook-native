@@ -34,7 +34,9 @@ const styles = StyleSheet.create({
         paddingBottom: 0,
     },
     ingridient: {
+        flex: 1,
         // marginHorizontal: 10,
         marginVertical: 10,
+        flexWrap: 'wrap'
     },
 })

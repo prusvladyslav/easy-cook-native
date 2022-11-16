@@ -15,7 +15,6 @@ export const MyRecipe = observer(({ navigation, route: { params: { id } } }) => 
         }
     },[isRecipeComplete])
     return (
-        <Provider>
         <SafeAreaView style={styles.container}>
             <IngridientsList ingridients={thisRecipe.ingridients} recipeId={id} />
             <StepsList steps={thisRecipe.steps} recipeId={id} />
@@ -29,7 +28,6 @@ export const MyRecipe = observer(({ navigation, route: { params: { id } } }) => 
                     color={'black'} size={'50'} />
             </View>
         </SafeAreaView>
-        </Provider>
     )
 })
 const styles = StyleSheet.create({

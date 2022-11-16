@@ -1,43 +1,66 @@
 import { makeAutoObservable } from "mobx";
-const defaultRecipeItems = [{
+const defaultRecipeItems = [
+  {
   id: "Tas6BePoW6xoanUy8onuG",
   ingridients: [
     {
       id: "Xbi4vCIKIQlfXI5EOBcvz",
-      name: "ingridient",
-      quantity: "2",
+      name: "all-purpose flour",
+      quantity: "2 cups",
+    },
+    {
+      id: "Xbi5vCIKIQlfXI5EOBcvz",
+      name: "baking powder",
+      quantity: "3 teaspoons",
+    },
+    {
+      id: "Xbi6vCIKIQlfXI5EOBcvz",
+      name: "salt",
+      quantity: "1/2 teaspoon ",
+    },
+    {
+      id: "Xbi7vCIKIQlfXI5EOBcvz",
+      name: "white sugar",
+      quantity: "3/4 cup",
+    },
+    {
+      id: "Xbi8vCIKIQlfXI5EOBcvz",
+      name: "egg",
+    },
+    {
+      id: "Xbi8vCIKIQlfXI1EsBcvz",
+      name: "milk",
+      quantity: "1 cup",
+    },
+    {
+      id: "Xbi9vCIKIQlfXI1EOBcvz",
+      name: "vegetable oil",
+      quantity: "1/4 cup",
     },
   ],
   steps: [
     {
       id: "NKQ5KT_x0swgGqT8jmxaM",
-      name: "step",
+      name: "Preheat the oven to 400 degrees F (200 degrees C). Grease a 12-cup muffin tin or line cups with paper liners.",
     },
-  ],
-  values: {
-    name: "Name",
-  },
-},
-{
-  id: "Tab6BePoW6xoanUy8onuG",
-  ingridients: [
-    {
-      id: "Xbi3vCIKIQlfXI5EOBcvz",
-      name: "ingridient",
-      quantity: "2",
-    },
-  ],
-  steps: [
     {
       id: "NKQ4KT_x0swgGqT8jmxaM",
-      name: "step",
+      name: "Stir flour, baking powder, salt, and sugar together in a large bowl; make a well in the center.",
+    },
+    {
+      id: "NKQ3KT_x0swgGqT8jmxaM",
+      name: "Beat egg with a fork in a small bowl or 2-cup measuring cup; whisk in milk and oil. Pour egg mixture all at once into flour mixture; mix quickly and lightly with a fork until just moistened. The batter will be lumpy. (Fold in additional ingredients if using; see variations below). Spoon batter into the prepared muffin cups, filling each 3/4 full.",
+    },
+    {
+      id: "NKQ2KT_x0swgGqT8jmxaM",
+      name: "Bake in the preheated oven until tops spring back when lightly pressed, about 25 minutes.",
     },
   ],
   values: {
-    name: "Name new",
+    name: "Best ever muffins",
   },
-  stars: 3,
-}]
+}
+]
 class Recipes {
   // recipes = []
   recipes = defaultRecipeItems
@@ -106,7 +129,7 @@ class Recipes {
   changeSort(value) {
     this.sortBy = value
   }
-  deleteAll() {
+  deleteAllRecipes() {
     this.recipes = []
   }
 }

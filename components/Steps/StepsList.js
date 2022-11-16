@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     container: {
         // marginVertical: 20,
         // flex: 2,
-        // backgroundColor: 'red',
         // justifyContent: 'center',
         // alignItems: 'center',
     },
